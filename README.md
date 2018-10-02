@@ -1,5 +1,8 @@
-# Proyecto SISTEMA DE MENSAJERIA Y REDES SOCIALES (SMRS)
+# Proyecto: SISTEMA DE MENSAJERIA Y REDES SOCIALES (SMRS)
 Repositorio Taller de Ingeniería de Software INFO264
+
+
+
 ## Autores
 * **Adolfo Cañoles**
 * **Juan Contreras**
