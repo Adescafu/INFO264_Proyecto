@@ -18,7 +18,7 @@ export class RegisterPageComponent implements OnInit {
   }
 
   onSubmitAddUsser(){
-    this.authService.registrarusuario(this.email, this.password)
+    this.authService.registrarusuarior(this.email, this.password)
     .then((res)=>{
       console.log('Good bien !!');
       console.log(res);
