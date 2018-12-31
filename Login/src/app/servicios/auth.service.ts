@@ -11,13 +11,13 @@ export class AuthService {
   ) { }
 
 
-  registrarusuarior (email: string,pass: string)
+  registerUser(email: string,pass: string)
   {
     return new Promise ((resolve, reject)=> {
-      this.afAuth.auth.createUserWithEmailAndPassword(email, pass)
+      this.afAuth.auth.createUserWithEmailAndPassword(email,pass)
       .then(userData=> resolve(userData),
       err=>reject(err));
-    })
+    });
   }
 
 
@@ -27,7 +27,7 @@ export class AuthService {
       this.afAuth.auth.signInWithEmailAndPassword(email,pass)
       .then(userData=> resolve(userData),
       err=>reject(err));
-    })
+    });
   }
 
   getAuth(){
