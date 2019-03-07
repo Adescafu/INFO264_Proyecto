@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import{ FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 
+import{HttpClientModule} from '@angular/common/http';
+
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './componentes/home-page/home-page.component';
 import { NavbarComponent } from './componentes/navbar/navbar.component';
@@ -15,6 +17,9 @@ import { AuthService } from './servicios/auth.service';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { environment} from '../environments/environment';
+//import { MaterialModule } from '@angular/material';
+
+import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 @NgModule({
   declarations: [
@@ -32,6 +37,8 @@ import { environment} from '../environments/environment';
     FormsModule,
     AngularFireAuthModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
+    HttpClientModule,
+    AngularFireDatabaseModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

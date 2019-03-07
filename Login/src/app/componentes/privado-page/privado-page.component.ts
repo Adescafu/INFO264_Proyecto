@@ -6,9 +6,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./privado-page.component.css']
 })
 export class PrivadoPageComponent implements OnInit {
-
-  constructor() { }
-
   ngOnInit() {
   }
 
