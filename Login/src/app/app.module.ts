@@ -17,9 +17,9 @@ import { AuthService } from './servicios/auth.service';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireAuthModule } from 'angularfire2/auth';
 import { environment} from '../environments/environment';
-//import { MaterialModule } from '@angular/material';
+//import { FlexLayoutModule } from '@angular/flex-layout';
 
-import { AngularFireDatabaseModule } from 'angularfire2/database';
+//import { AngularFireDatabaseModule } from 'angularfire2/database';
 
 @NgModule({
   declarations: [
@@ -38,7 +38,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
     AngularFireAuthModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     HttpClientModule,
-    AngularFireDatabaseModule
+    //AngularFireDatabaseModule,
+    //FlexLayoutModule,
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
